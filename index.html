@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        button {
+            padding: 20px 40px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="reindirizzaCasualmente()">START</button>
+
+    <script type="text/javascript">
+        function reindirizzaCasualmente() {
+            var urls = [
+                'http://link1.com',
+                'http://link2.com',
+                'http://link3.com',
+                'http://link4.com',
+                'http://link5.com',
+                'http://link6.com',
+                'http://link7.com',
+                'http://link8.com'
+            ];
+            var randomIndex = Math.floor(Math.random() * urls.length);
+            window.location.href = urls[randomIndex];
+        }
+    </script>
+</body>
+</html>
